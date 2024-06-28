@@ -30,6 +30,7 @@ install:
   - environment_indicator
   - eca
   - link_attributes
+  - link_attributes_menu_link_content
   - metatag
   - minifyhtml
   - pathauto
@@ -37,7 +38,18 @@ install:
   - responsive_preview
   - robotstxt
   - simple_sitemap
+  - ultimate_cron
 config:
+  import:
+    dblog: '*'
+    pathauto: '*'
+    responsive_preview: '*'
+    redirect:
+      - redirect.settings
+      - system.action.redirect_delete_action
+      - views.view.redirect
+    simple_sitemap: '*'
+    ultimate_cron: '*'
   actions:
     block.block.olivero_branding:
       simple_config_update:
@@ -74,4 +86,29 @@ config:
       simple_config_update:
         region: header
         weight: -10
+    views.settings:
+      simple_config_update:
+        ui.show:
+          default_display: true
+          advanced_column: true
+          sql_query.enabled: true
+    system.date:
+      simple_config_update:
+        country.default: US
+        timezone.default: America/New_York
+        timezone.user.configurable: false
+    system.performance:
+      simple_config_update:
+        cache.page.max_age: 21600
+        css.preprocess: true
+        js.preprocess: true
+    minifyhtml.config:
+      simple_config_update:
+        strip_comments: true
+        minify: true
+        exclude_pages: '/admin*'
+    easy_breadcrumb.settings:
+      simple_config_update:
+        add_structured_data_json_ld: true
+        hide_single_home_item: true
 

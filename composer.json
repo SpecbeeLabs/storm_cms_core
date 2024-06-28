@@ -22,6 +22,7 @@
         "drupal/metatag": "^2.0",
         "drupal/minifyhtml": "^2.0",
         "drupal/responsive_preview": "^2.1",
-        "drupal/robotstxt": "^1.5"
+        "drupal/robotstxt": "^1.5",
+        "drupal/ultimate_cron": "^2.0@alpha"
     }
 }
