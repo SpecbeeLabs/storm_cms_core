@@ -1,5 +1,18 @@
 name: Storm CMS Core
 description: Base recipe to install the required modules and conifgurations.
+recipes:
+  - core/recipes/basic_html_format_editor
+  - core/recipes/full_html_format_editor
+  - core/recipes/basic_block_type
+  - core/recipes/image_media_type
+  - core/recipes/local_video_media_type
+  - core/recipes/remote_video_media_type
+  - core/recipes/standard_responsive_images
+  - core/recipes/editorial_workflow
+  - core/recipes/core_recommended_admin_theme
+  - core/recipes/core_recommended_front_end_theme
+  - core/recipes/core_recommended_maintenance
+  - core/recipes/core_recommended_performance
 install:
   - contextual
   - config
