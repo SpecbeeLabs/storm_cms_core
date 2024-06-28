@@ -1,0 +1,64 @@
+name: Storm CMS Core
+description: Base recipe to install the required modules and conifgurations.
+install:
+  - contextual
+  - config
+  - field_ui
+  - help
+  - menu_link_content
+  - menu_ui
+  - navigation
+  - path
+  - phpass
+  - settings_tray
+  - views_ui
+  - backup_migrate
+  - easy_breadcrumb
+  - environment_indicator
+  - eca
+  - link_attributes
+  - metatag
+  - minifyhtml
+  - pathauto
+  - redirect
+  - responsive_preview
+  - robotstxt
+  - simple_sitemap
+config:
+  actions:
+    block.block.olivero_branding:
+      simple_config_update:
+        status: false
+    block.block.olivero_tools:
+      simple_config_update:
+        status: false
+    block.block.olivero_admin:
+      simple_config_update:
+        status: false
+    block.block.olivero_local_tasks:
+      simple_config_update:
+        status: false
+    block.block.olivero_local_actions:
+      simple_config_update:
+        status: false
+    block.block.claro_tools:
+      simple_config_update:
+        status: false
+    block.block.claro_branding:
+      simple_config_update:
+        status: false
+    block.block.claro_admin:
+      simple_config_update:
+        status: false
+    block.block.claro_local_tasks:
+      simple_config_update:
+        status: false
+    block.block.olivero_page_title:
+      simple_config_update:
+        region: content_above
+        weight: -10
+    block.block.claro_page_title:
+      simple_config_update:
+        region: header
+        weight: -10
+
