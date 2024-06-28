@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {}
+id: us_date_format
+label: "US Date Format"
+locked: false
+pattern: "F d, Y"

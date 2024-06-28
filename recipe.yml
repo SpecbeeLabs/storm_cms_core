@@ -1,14 +1,7 @@
 name: Storm CMS Core
-description: Base recipe to install the required modules and conifgurations.
+description: Base recipe to install the required modules and configurations.
 recipes:
-  - core/recipes/basic_html_format_editor
-  - core/recipes/full_html_format_editor
-  - core/recipes/basic_block_type
-  - core/recipes/image_media_type
-  - core/recipes/local_video_media_type
-  - core/recipes/remote_video_media_type
-  - core/recipes/standard_responsive_images
-  - core/recipes/editorial_workflow
+  - core/recipes/administrator_role
   - core/recipes/core_recommended_admin_theme
   - core/recipes/core_recommended_front_end_theme
   - core/recipes/core_recommended_maintenance
@@ -32,6 +25,9 @@ install:
   - link_attributes
   - link_attributes_menu_link_content
   - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - metatag_views
   - minifyhtml
   - pathauto
   - redirect
@@ -42,6 +38,12 @@ install:
 config:
   import:
     dblog: '*'
+    metatag:
+      - metatag.metatag_defaults.403
+      - metatag.metatag_defaults.404
+      - metatag.metatag_defaults.front
+      - metatag.metatag_defaults.global
+      - metatag.settings
     pathauto: '*'
     responsive_preview: '*'
     redirect:
@@ -91,7 +93,8 @@ config:
         ui.show:
           default_display: true
           advanced_column: true
-          sql_query.enabled: true
+          sql_query:
+            enabled: true
     system.date:
       simple_config_update:
         country.default: US

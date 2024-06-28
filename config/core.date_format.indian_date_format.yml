@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {}
+id: indian_date_format
+label: "Indian Date Format"
+locked: false
+pattern: "d F, Y"
