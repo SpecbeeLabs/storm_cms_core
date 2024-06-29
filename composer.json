@@ -23,6 +23,8 @@
         "drupal/minifyhtml": "^2.0",
         "drupal/responsive_preview": "^2.1",
         "drupal/robotstxt": "^1.5",
-        "drupal/ultimate_cron": "^2.0@alpha"
+        "drupal/ultimate_cron": "^2.0@alpha",
+        "drupal/antibot": "^2.0",
+        "drupal/honeypot": "^2.1"
     }
 }

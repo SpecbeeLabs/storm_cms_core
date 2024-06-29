@@ -18,10 +18,12 @@ install:
   - phpass
   - settings_tray
   - views_ui
+  - antibot
   - backup_migrate
   - easy_breadcrumb
   - environment_indicator
   - eca
+  - honeypot
   - link_attributes
   - link_attributes_menu_link_content
   - metatag
@@ -52,6 +54,11 @@ config:
       - views.view.redirect
     simple_sitemap: '*'
     ultimate_cron: '*'
+    honeypot.settings:
+      simple_config_update:
+        form_settings:
+          user_pass: true
+          user_register_form: true
   actions:
     block.block.olivero_branding:
       simple_config_update:
