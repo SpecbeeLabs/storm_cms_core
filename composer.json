@@ -1,7 +1,7 @@
 {
     "name": "specbee/storm_cms_core",
     "type": "drupal-recipe",
-    "license": "MIT",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Malabya",
