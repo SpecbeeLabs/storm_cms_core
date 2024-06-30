@@ -54,11 +54,6 @@ config:
       - views.view.redirect
     simple_sitemap: '*'
     ultimate_cron: '*'
-    honeypot.settings:
-      simple_config_update:
-        form_settings:
-          user_pass: true
-          user_register_form: true
   actions:
     block.block.olivero_branding:
       simple_config_update:
@@ -112,13 +107,18 @@ config:
         cache.page.max_age: 21600
         css.preprocess: true
         js.preprocess: true
+    easy_breadcrumb.settings:
+      simple_config_update:
+        add_structured_data_json_ld: true
+        hide_single_home_item: true
+    honeypot.settings:
+      simple_config_update:
+        form_settings:
+          user_pass: true
+          user_register_form: true
     minifyhtml.config:
       simple_config_update:
         strip_comments: true
         minify: true
         exclude_pages: '/admin*'
-    easy_breadcrumb.settings:
-      simple_config_update:
-        add_structured_data_json_ld: true
-        hide_single_home_item: true
 
