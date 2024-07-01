@@ -122,4 +122,8 @@ config:
         strip_comments: true
         minify: true
         exclude_pages: '/admin*'
+    user.role.authenticated:
+      grantPermissions:
+        - 'bypass honeypot protection'
+        - 'skip antibot'
 
