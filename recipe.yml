@@ -35,6 +35,7 @@ install:
   - redirect
   - responsive_preview
   - robotstxt
+  - select2
   - simple_sitemap
   - ultimate_cron
 config:
