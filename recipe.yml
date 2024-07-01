@@ -26,12 +26,14 @@ install:
   - honeypot
   - link_attributes
   - link_attributes_menu_link_content
+  - login_destination
   - metatag
   - metatag_open_graph
   - metatag_twitter_cards
   - metatag_views
   - minifyhtml
   - pathauto
+  - r4032login
   - redirect
   - responsive_preview
   - robotstxt

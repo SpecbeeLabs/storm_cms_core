@@ -27,6 +27,8 @@
         "drupal/antibot": "^2.0",
         "drupal/honeypot": "^2.1",
         "drupal/select2": "^1.15",
-        "npm-asset/select2": "^4.1"
+        "npm-asset/select2": "^4.1",
+        "drupal/r4032login": "^2.2",
+        "drupal/login_destination": "^2.0@beta"
     }
 }
