@@ -29,6 +29,7 @@
         "drupal/select2": "^1.15",
         "npm-asset/select2": "^4.1",
         "drupal/r4032login": "^2.2",
-        "drupal/login_destination": "^2.0@beta"
+        "drupal/login_destination": "^2.0@beta",
+        "drupal/advagg": "^6.0@alpha"
     }
 }
