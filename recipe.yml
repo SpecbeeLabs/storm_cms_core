@@ -40,6 +40,12 @@ install:
   - select2
   - simple_sitemap
   - ultimate_cron
+  - advagg_bundler
+  - advagg_ext_minify
+  - advagg_css_minify
+  - advagg_js_minify
+  - advagg_mod
+  - advagg
 config:
   import:
     dblog: '*'
@@ -128,4 +134,26 @@ config:
       grantPermissions:
         - 'bypass honeypot protection'
         - 'skip antibot'
+    advagg_bundler.settings:
+      simple_config_update:
+        css:
+          logic: 1
+          max: 4
+        js:
+          logic: 1
+          max: 4
+    advagg_js_minify.settings:
+      simple_config_update:
+        minifier: 4
+    advagg.settings:
+      simple_config_update:
+        dns_prefetch: true
+    advagg_mod.settings:
+      simple_config_update:
+        css_adjust_sort_browsers: true
+        css_adjust_sort_external: true
+        css_preprocess: true
+        js_adjust_sort_external: true
+        js_adjust_sort_browsers: true
+        js_preprocess: true
 
