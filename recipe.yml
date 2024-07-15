@@ -105,8 +105,10 @@ config:
         ui.show:
           default_display: true
           advanced_column: true
+          preview_information: true
           sql_query:
             enabled: true
+            where: above
     system.date:
       simple_config_update:
         country.default: US
