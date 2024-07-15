@@ -23,6 +23,7 @@ install:
   - easy_breadcrumb
   - environment_indicator
   - eca
+  - field_group
   - honeypot
   - link_attributes
   - link_attributes_menu_link_content
