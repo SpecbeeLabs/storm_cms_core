@@ -28,17 +28,12 @@ install:
   - link_attributes
   - link_attributes_menu_link_content
   - login_destination
-  - metatag
-  - metatag_open_graph
-  - metatag_twitter_cards
-  - metatag_views
   - minifyhtml
   - pathauto
   - r4032login
   - redirect
   - responsive_preview
   - robotstxt
-  - select2
   - simple_sitemap
   - ultimate_cron
   - advagg_bundler
@@ -50,12 +45,6 @@ install:
 config:
   import:
     dblog: '*'
-    metatag:
-      - metatag.metatag_defaults.403
-      - metatag.metatag_defaults.404
-      - metatag.metatag_defaults.front
-      - metatag.metatag_defaults.global
-      - metatag.settings
     pathauto: '*'
     responsive_preview: '*'
     redirect:
