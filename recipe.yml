@@ -4,20 +4,24 @@ recipes:
   - core/recipes/administrator_role
   - core/recipes/core_recommended_admin_theme
   - core/recipes/core_recommended_front_end_theme
-  - core/recipes/core_recommended_maintenance
   - core/recipes/core_recommended_performance
 install:
-  - contextual
+  - automated_cron
+  - block
+  - block_content
   - config
+  - contextual
+  - dblog
   - field_ui
   - help
   - menu_link_content
   - menu_ui
   - navigation
+  - node
+  - page_cache
   - path
-  - phpass
-  - settings_tray
   - views_ui
+  - advagg
   - antibot
   - backup_migrate
   - easy_breadcrumb
@@ -36,15 +40,16 @@ install:
   - robotstxt
   - simple_sitemap
   - ultimate_cron
-  - advagg_bundler
-  - advagg_ext_minify
-  - advagg_css_minify
-  - advagg_js_minify
-  - advagg_mod
-  - advagg
 config:
   import:
-    dblog: '*'
+    automated_cron:
+      - automated_cron.settings
+    block_content:
+      - views.view.block_content.yml
+    dblog:
+      - views.view.watchdog
+    system:
+      - system.cron
     pathauto: '*'
     responsive_preview: '*'
     redirect:
@@ -126,26 +131,4 @@ config:
       grantPermissions:
         - 'bypass honeypot protection'
         - 'skip antibot'
-    advagg_bundler.settings:
-      simple_config_update:
-        css:
-          logic: 1
-          max: 4
-        js:
-          logic: 1
-          max: 4
-    advagg_js_minify.settings:
-      simple_config_update:
-        minifier: 4
-    advagg.settings:
-      simple_config_update:
-        dns_prefetch: true
-    advagg_mod.settings:
-      simple_config_update:
-        css_adjust_sort_browsers: true
-        css_adjust_sort_external: true
-        css_preprocess: true
-        js_adjust_sort_external: true
-        js_adjust_sort_browsers: true
-        js_preprocess: true
 
