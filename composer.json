@@ -25,6 +25,8 @@
         "drupal/honeypot": "^2.1",
         "drupal/r4032login": "^2.2",
         "drupal/login_destination": "^2.0@beta",
-        "drupal/advagg": "^6.0@alpha"
+        "drupal/advagg": "^6.0@alpha",
+        "drupal/google_tag": "^2.0",
+        "drupal/sitemap": "^2.0@beta"
     }
 }

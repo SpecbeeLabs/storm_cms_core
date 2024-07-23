@@ -26,6 +26,7 @@ install:
   - antibot
   - easy_breadcrumb
   - environment_indicator
+  - google_tag
   - honeypot
   - link_attributes
   - link_attributes_menu_link_content
@@ -37,6 +38,7 @@ install:
   - responsive_preview
   - robotstxt
   - simple_sitemap
+  - sitemap
   - ultimate_cron
 config:
   import:
@@ -55,6 +57,8 @@ config:
       - system.action.redirect_delete_action
       - views.view.redirect
     simple_sitemap: '*'
+    sitemap:
+      - sitemap.settings
     ultimate_cron: '*'
   actions:
     block.block.olivero_branding:
