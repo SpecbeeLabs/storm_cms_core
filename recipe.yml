@@ -120,11 +120,6 @@ config:
         form_settings:
           user_pass: true
           user_register_form: true
-    minifyhtml.config:
-      simple_config_update:
-        strip_comments: true
-        minify: true
-        exclude_pages: '/admin*'
     user.role.authenticated:
       grantPermissions:
         - 'bypass honeypot protection'
