@@ -20,22 +20,20 @@ install:
   - node
   - page_cache
   - path
+  - views
   - views_ui
   - advagg
   - antibot
-  - backup_migrate
   - easy_breadcrumb
   - environment_indicator
-  - eca
-  - field_group
   - honeypot
   - link_attributes
   - link_attributes_menu_link_content
   - login_destination
-  - minifyhtml
   - pathauto
   - r4032login
   - redirect
+  - redirect_404
   - responsive_preview
   - robotstxt
   - simple_sitemap
