@@ -37,6 +37,7 @@ install:
   - redirect_404
   - responsive_preview
   - robotstxt
+  - seckit
   - simple_sitemap
   - sitemap
   - ultimate_cron
@@ -56,6 +57,7 @@ config:
       - redirect.settings
       - system.action.redirect_delete_action
       - views.view.redirect
+    seckit: "*"
     simple_sitemap: '*'
     sitemap:
       - sitemap.settings
@@ -124,6 +126,12 @@ config:
         form_settings:
           user_pass: true
           user_register_form: true
+    seckit.settings:
+      simple_config_update:
+        seckit_xss.csp:
+          checkbox: true
+          vendor-prefix:
+            x: true
     user.role.authenticated:
       grantPermissions:
         - 'bypass honeypot protection'
