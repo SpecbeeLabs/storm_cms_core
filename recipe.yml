@@ -5,7 +5,6 @@ recipes:
   - core/recipes/core_recommended_admin_theme
   - core/recipes/core_recommended_front_end_theme
   - core/recipes/core_recommended_performance
-  - core/recipes/editorial_workflow
 install:
   - automated_cron
   - block
