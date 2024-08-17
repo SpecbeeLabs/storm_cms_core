@@ -5,6 +5,7 @@ recipes:
   - core/recipes/core_recommended_admin_theme
   - core/recipes/core_recommended_front_end_theme
   - core/recipes/core_recommended_performance
+  - core/recipes/editorial_workflow
 install:
   - automated_cron
   - block
@@ -20,6 +21,7 @@ install:
   - node
   - page_cache
   - path
+  - taxonomy
   - views
   - views_ui
   - advagg
@@ -51,6 +53,10 @@ config:
       - views.view.watchdog
     system:
       - system.cron
+    taxonomy:
+      - core.entity_view_mode.taxonomy_term.full
+      - system.action.taxonomy_term_publish_action
+      - system.action.taxonomy_term_unpublish_action
     pathauto: '*'
     responsive_preview: '*'
     redirect:
