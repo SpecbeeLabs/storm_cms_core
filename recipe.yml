@@ -42,6 +42,7 @@ install:
   - simple_sitemap
   - sitemap
   - ultimate_cron
+  - views_infinite_scroll
 config:
   import:
     automated_cron:

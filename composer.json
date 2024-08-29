@@ -28,6 +28,7 @@
         "drupal/advagg": "^6.0@alpha",
         "drupal/google_tag": "^2.0",
         "drupal/sitemap": "^2.0@beta",
-        "drupal/seckit": "^2.0"
+        "drupal/seckit": "^2.0",
+        "drupal/views_infinite_scroll": "^2.0"
     }
 }
