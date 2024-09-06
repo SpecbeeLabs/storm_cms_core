@@ -30,6 +30,6 @@
         "drupal/sitemap": "^2.0@beta",
         "drupal/seckit": "^2.0",
         "drupal/views_infinite_scroll": "^2.0",
-        "drupal/better_exposed_filters": "^7.0"
+        "drupal/better_exposed_filters": "^6.0"
     }
 }
