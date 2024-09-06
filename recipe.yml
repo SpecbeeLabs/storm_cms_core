@@ -25,6 +25,7 @@ install:
   - views_ui
   - advagg
   - antibot
+  - better_exposed_filters
   - easy_breadcrumb
   - environment_indicator
   - google_tag
